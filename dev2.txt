@@ -1,0 +1,17 @@
+#!bin/bash
+cd../
+echo stoping Batch Module...
+appHome = 'pwd'
+pid = $(PS - Aeflgrep 'pwd'|grep -v grep|awk '{print $2}')
+kill -9$pid
+[echo = $(PS-A)]
+echo removing nohup.out file...
+if[-f bin/nohup.out]
+then
+vm -vf bin/nohup.out
+fi
+cd standalong|log|
+timeNow = '(date--date='now' + %y=%m-%d_%H)'
+cd ${appHome}/bin
+echo restarting Application.....
+nohup  ./standalone.sh - bmanagement=127.0.0.1  -60.0.0 & sleep 5

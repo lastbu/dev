@@ -1,0 +1,15 @@
+$git init
+$git clone
+$git add remote origin <link>
+$git pull origin main/master
+$git status
+$git add <createdfile.txt.>
+$git commit
+$git branch new_branch
+$git new_branch checkout
+$git status
+$git add
+$git checkout master
+$git checkout new_branch
+$ls
+$git push origin master/main
